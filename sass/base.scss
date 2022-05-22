@@ -1,0 +1,354 @@
+//Variables
+
+
+$pageWidth: 1400px; //Ширина страницы
+$pagePadding: 0px; //Отступы по сторонам
+
+$blue: #009fe9; 
+$white: #fff;
+$textColor: #282828;
+
+
+//Шрифты
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,300&subset=latin,greek-ext);
+
+@font-face	{
+	font-family: 'ProbaPro';
+	src: url('../fonts/ProbaProRegular.eot');
+	src: url('../fonts/ProbaProRegular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/ProbaProRegular.woff') format('woff'),
+		 url('../fonts/ProbaProRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face	{
+	font-family: 'ProbaPro';
+	src: url('../fonts/ProbaProBold.eot');
+	src: url('../fonts/ProbaProBold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/ProbaProBold.woff') format('woff'),
+		 url('../fonts/ProbaProBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	min-width: 1348px;
+	min-height: 100%;
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	 /*font-size: 0px;Ставим на фон - для использования inline-блоков*/
+
+	 &.scroll-block{
+	 	overflow: hidden;
+	 }
+}
+b,strong{
+	font-weight: bold;
+}
+.font_bolder{
+	font-weight: 600;
+}
+.center{
+	text-align: center;
+}
+i,em{
+	font-style: italic;
+}
+html * {
+	max-height:1000000px;
+}
+.clearfix{
+	clear: both;
+}
+.clear:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+input::-webkit-input-placeholder {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #545454;
+}
+input::-moz-placeholder {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #545454;
+} 
+input::placeholder {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #545454;
+}
+
+a{
+	color: #08bcc1;
+	text-decoration: none;
+
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.full-page{
+	width: 100%;
+	min-height: 100%;
+	min-width: 1400px;
+}
+
+//Стили для текста
+@mixin textStyles{
+	p, ul,ol{
+		margin-bottom: 25px;
+
+		&:last-child{
+			margin-bottom: 0px !important;
+		}
+	}
+
+	li{
+		margin-left: 17px;
+	}
+
+	ul>li{
+		list-style-type: disc;
+	}
+	ol>li{
+		list-style-type: decimal;
+	}
+}
+
+.textblock{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #545454;
+	@include textStyles;
+
+	a{
+		text-decoration: underline !important;
+
+		&:hover{
+			text-decoration: none !important;
+		}
+	}
+
+
+	img{
+		max-width: 100%;
+	}
+
+	h2,
+	.h2{
+		font-size: 30px;
+		line-height: 34px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+
+	h3,h4,h5,h6,
+	.h3,.h4,.h5,.h6{
+		padding-top: 20px;
+		margin-bottom: 20px;
+		font-size: 24px;
+		line-height: 28px;
+		font-weight: 600;
+	}
+}
+
+.textblock .blockquote,
+.textblock blockquote,
+blockquote.textblock{
+	font-size: 16px;
+	border-left: 2px solid #171515;
+	padding: 10px 10px 14px 20px;
+	margin-top: 32px;
+	font-weight: bold;
+}
+
+.-dn-{
+	display: none;
+}
+
+.center{
+	text-align: center;
+}
+
+.relative{
+	position: relative;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.main-page{
+	position: fixed;
+	left: 0; top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	z-index: 0;
+
+	.background{
+		position: fixed;
+		left: 0; right: 0;
+		top: 0;
+		opacity: 1;
+		z-index: -1;
+		background-color: #000;
+
+		&.second-bg{
+			z-index: 8;
+		}
+
+		&.third-bg{
+			z-index: 6;
+		}
+	}
+}
+
+.button{
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	color: #17171b !important;
+	line-height: 45px;
+	padding: 0px 38px;
+	border: 2px solid #fff;
+	border-radius: 7px;
+	background-color: #FFF;
+	overflow: hidden;
+	text-decoration: none;
+
+	&:hover{
+		color: #fff !important;
+		background-color: transparent;
+	}
+
+	&.transparent{
+		color: #fff !important;
+		background-color: transparent;
+		border: 1px solid #fff;
+
+		&:hover{
+			color: #0b9007 !important;
+			background-color: #fff;
+		}
+	}
+}
+
+form{
+	label{
+		display: block;
+		width: 100%;
+		font-weight: 300;
+		font-size: 16px;
+		padding-left: 10px;
+		margin-bottom: 15px;
+	}
+
+	.textfield{
+		display: block;
+		width: 100%;
+		height: 48px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 17px;
+		font-weight: 300;
+		line-height: 46px;
+		color: #222;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		padding: 0px 9px;
+		outline: none;
+		margin-bottom: 15px;
+
+		&:focus{
+			border-color: #42b224;
+		}
+	}
+}
+
+.submit-btn{
+	display: inline-block;
+	height: 48px;
+	margin: 0px 5px;
+	font-size: 16px;
+	color: #222;
+	font-weight: 600;
+	line-height: 46px;
+	padding: 0px 72px;
+	margin-top: 18px;
+	border: 1px solid #42b224;
+	background-color: transparent;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+
+	&:hover{
+		background-color: #42b224;
+		color: #fff;
+	}
+}
+
+.breadcrumbs{
+	padding-left: 10px;
+	li{
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 30px;
+		position: relative;
+		font-size: 18px;
+		line-height: 26px;
+
+		&:before{
+			content:"";
+			position: absolute;
+			left: -25px;
+			top: 11px;
+			width: 17px;
+			height: 7px;
+			background-image: url(../img/icons/bread-arrow.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		&:first-child:before{
+			display: none;
+		}
+
+		a{
+			border-bottom: 1px solid #000;
+
+			&:hover{
+				border-color: transparent;
+			}
+		}
+	}
+}
+
+.popup-background{
+	display: none;
+	position: fixed;
+	z-index: 99;
+	top: 0px; left: 0px;
+	right: 0px; bottom: 0px;
+	background-color: #000;
+	opacity: 0.5;
+}

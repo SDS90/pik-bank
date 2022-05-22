@@ -1,0 +1,25 @@
+//Все стили
+
+@import 'reset';
+@import 'base';
+
+@import 'plugins/jquery.scrollbar'; //Прокрутка
+@import 'plugins/fancybox'; //Фенсибокс
+//@import 'plugins/fixed-positioning';
+
+@import 'main/first'; //Первый
+@import 'main/second'; //Второй
+@import 'main/third'; //Третий
+@import 'main/forth'; //Четвёртый
+
+@import 'all/footer'; //Подвальчик
+
+@import 'inner/all'; //Внутренние страницы - общее
+@import 'inner/order'; //Заявка
+@import 'inner/lc'; //Личный кабинет
+@import 'inner/credit'; //Кредиты
+@import 'inner/business'; //Бизнес
+@import 'inner/actions'; //Акции
+@import 'inner/contacts'; //Офисы продаж
+@import 'inner/about'; //О компании
+@import 'inner/news'; //Новости и акции

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=1348">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.2/themes/south-street/jquery-ui.css" />
+    
+    <!--[if lt IE 9]>
+        <script src="js/html5.js"></script>
+        <link rel="stylesheet" href="css/style_ie8.css">
+    <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+
+    <script src="js/plugins/skrollr.min.js"></script>
+
+    <script src="js/plugins/jquery.scrollbar.min.js"></script>
+    <script src="js/plugins/jquery.mousewheel.min.js"></script>
+    <script src="js/plugins/jquery.cycle.all.js"></script>
+    <script src="js/plugins/jquery.fancybox.js"></script>
+
+    <script src="js/plugins/jquery.inputmask.js"></script>
+
+    <script src="js/plugins/skrollr.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    
+    <title>ПИК - Кредитная линия</title>
+</head>
+
+<body> 
+
+    <!-- Внутренняя страница  -->
+    <div class="inner-page left-green-gradient credit-animation">
+
+        <!-- В этом блоке всё, кроме подвала -->
+        <div id="withoutFooter">
+            <!-- Шапка -->
+            <div class="header-wrapper">
+                <div class="header">
+
+                    <!-- Меню -->
+                    <div class="menu-wrapper">
+                        <!-- Логотип -->
+                        <div>
+                            <a href="#" class="logo">
+                            </a>
+                        </div>                        
+
+                        <div>
+                            <ul class="menu">
+                                <li><a href="#">Бизнесу и ИП</a></li>
+                                <li><a href="#">Частным клиентам</a></li>
+                                <li><a href="#">Офисы продаж</a></li>
+                                <li><a href="#">Акции</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <div class="cabinet">
+                                <a href="#" class="open-cabinet-form">Вход в личный кабинет</a>
+                                
+                                <!-- Форма входа в кабинет -->
+                                <form class="cabinet-form">
+                                    <div class="form-header">Вход в личный кабинет</div>
+
+                                    <label>Логин</label>
+                                    <input type="text" class="textfield">
+
+                                    <label>Пароль</label>
+                                    <input type="password" class="textfield">
+
+                                    <input type="submit" value="Войти" class="submit-btn">
+
+                                    <div class="error">Ошибка</div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="phone"><span>8 800 333 23 23</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Страница Кредитов -->
+            <div class="credit-page">
+                
+                <!-- Первый блок - приветствие -->
+                <div class="credit-first-block-wrapper">
+                    <div class="credit-first-block" style="background-image: url(img/creditline.jpg);">
+                        
+                        <div class="first-block-inner clear">
+                            
+                            <!-- Левый блок - заголовок и цифры -->
+                            <div class="left-block">
+                                <h1 class="page-header">Кредитная линия</h1>
+
+                                <div class="page-subheader">Если необходимо увеличить оборотные средства</div>
+
+                                <div class="credit-more-info textblock">
+                                    <p>Займ перечисляется на расчётный счёт компании в течение 2 часов после подписания документов.</p>
+                                    <p>После первого погашения займа компания получает предодобренный лимит — это сокращает время на принятие решения о выдаче займа.</p>
+                                </div>
+
+                                <a href="#" class="button open-cons-form">Получить консультацию</a>
+                                
+                                <!-- Форма входа в кабинет -->
+                                <form class="cons-form">
+                                    <div class="form-header">Получить консультацию</div>
+
+                                    <label>Ваше имя</label>
+                                    <input type="text" class="textfield">
+
+                                    <label>Телефон</label>
+                                    <input type="text" class="textfield phone">
+
+                                    <input type="submit" value="Отправить" class="submit-btn">
+                                    
+                                    <!-- Сюда будет выводится текст в случае ошибки -->
+                                    <div class="error"></div>
+
+                                </form>
+
+                            </div>
+
+                            <!-- Калькулятор -->
+                            <form class="right-block">
+                                <div class="subtext">Предварительно одобренная сумма</div>
+                                <div class="bigtext">50 000 – 100 000 Р</div>
+
+                                <div class="subtext">Срок</div>
+                                <div class="bigtext">до 1 месяца</div>
+
+                                <div class="subtext">Ставка</div>
+                                <div class="bigtext">2% в день</div>
+                                
+                                <a href="#" class="submit-btn">Оформить заявку</a>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Информация о кредите -->
+                <div class="about-credit">
+
+                    <div class="about-header scroll-animation">
+                        <a href="#oooDOC" class="active">OOO</a> <span>или</span> <a href="#ipDOC">ИП</a>
+                    </div>
+                    
+                    <!-- Документы для ООО -->
+                    <div id="oooDOC" class="credit-tab">
+                    
+                        <!-- Предупреждение -->
+                        <div class="warning textblock scroll-animation">
+                            <div class="subheader">Рассмотрим заявку, только если:</div>
+                            <ol>
+                                <li>Ваша компания существует больше года.
+                                <li>За вас поручатся учредители, которые владеют более 50% компании.</li>
+                            </ol>
+                        </div>
+
+                        <div class="about-subheader scroll-animation">Документы</div>
+                        
+                        <div class="documents-wrapper">
+                            <!-- Документ -->
+                            <div class="document scroll-animation">
+                                <div class="img-wrapper">
+                                    <img src="img/credit/anketa.png" alt="">
+                                </div>                        
+                                <span>Заявка на предоставление услуги</span>
+                            </div>
+
+                            <!-- Документ -->
+                            <div class="document scroll-animation">
+                                <div class="img-wrapper">
+                                    <img src="img/credit/anketa.png" alt="">
+                                </div>                        
+                                <span>Анкета предприятия</span>
+                            </div>
+
+                            <!-- Документ -->
+                            <div class="document scroll-animation">
+                                <div class="img-wrapper">
+                                    <img src="img/credit/anketa.png" alt="">
+                                </div>                        
+                                <span>Копия паспортов учредителей</span>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="about-subheader scroll-animation">Как это работает?</div>
+
+                        <ul class="about-list">
+                            <li>
+                                <div class="num scroll-animation">1</div>
+                                <div class="about-block scroll-animation"><a href="#">Заполняете заявку</a> на сайте, или приходите в отделение</div>
+                            </li>
+                            <li>
+                                <div class="num scroll-animation">2</div>
+                                <div class="about-block scroll-animation">В течение 1 дня в компанию выезжает <br> специалист для получения документов <br> и дооформления заявки</div>
+                                <div class="fact-block scroll-animation">
+                                    <div>
+                                        <img src="img/credit/anketa.png" alt="">
+                                        <span>Приготовьте анкету предприятия (<a href="#">скачать</a>) <br> и копии паспортов учредителей-поручителей.</span>
+                                    </div>                                
+                                </div>
+                            </li>
+                            <li>
+                                <div class="num scroll-animation">3</div>
+                                <div class="about-block scroll-animation">В течение 1 дня мы принимаем <br> решение о выдаче займа</div>
+                            </li>
+                            <li>
+                                <div class="num scroll-animation">4</div>
+                                <div class="about-block scroll-animation">Подписываем документы <br>и через 2 часа перечисляем<br> деньги на расчётный счёт</div>
+                                <div class="fact-block scroll-animation">
+                                    <div>
+                                        <img src="img/credit/time.png" alt="">
+                                        <span>Срок погашения начинается в момент перевода денег на расчётный счёт компании. <br> В течение этого срока нужно погасить всю сумму.</span>
+                                    </div>                                
+                                </div>
+                            </li>
+                            <li>
+                                <div class="num scroll-animation">5</div>
+                                <div class="about-block scroll-animation">Вовремя погашаете займ</div>
+                                <div class="fact-block scroll-animation">
+                                    <div>
+                                        <img src="img/credit/check.png" alt="">
+                                        <span>Если вы полностью вовремя погасите займ, в следующий раз мы одобрим заявку в течение часа.</span>
+                                    </div>
+                                    <div>
+                                        <img src="img/credit/cross.png" alt="">
+                                        <span>Иначе — применим санкции.</span>
+                                    </div>                             
+                                </div>
+                            </li>
+                            
+                        </ul>
+
+                    </div>
+                    
+                    <!-- Документы для ИП -->
+                    <div id="ipDOC" class="credit-tab">
+
+                        <!-- Предупреждение -->
+                        <div class="warning textblock scroll-animation">
+                            <div class="subheader">Рассмотрим заявку, только если:</div>
+                            <ol>
+                                <li>Ваша компания существует больше года.
+                                <li>За вас поручатся учредители, которые владеют более 50% компании.</li>
+                            </ol>
+                        </div>
+
+                        <div class="about-subheader scroll-animation">Документы для ИП</div>
+                        
+                        <div class="documents-wrapper">
+                            <!-- Документ -->
+                            <div class="document scroll-animation">
+                                <div class="img-wrapper">
+                                    <img src="img/credit/anketa.png" alt="">
+                                </div>                        
+                                <span>Заявка на предоставление услуги</span>
+                            </div>
+
+                            <!-- Документ -->
+                            <div class="document scroll-animation">
+                                <div class="img-wrapper">
+                                    <img src="img/credit/anketa.png" alt="">
+                                </div>                        
+                                <span>Анкета Индивидуального предпринимателя</span>
+                            </div>
+
+                            <!-- Документ -->
+                            <div class="document scroll-animation">
+                                <div class="img-wrapper">
+                                    <img src="img/credit/anketa.png" alt="">
+                                </div>                        
+                                <span>Копия паспортов учредителей</span>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="about-subheader scroll-animation">Как это работает?</div>
+
+                        <ul class="about-list">
+                            <li>
+                                <div class="num scroll-animation">1</div>
+                                <div class="about-block scroll-animation"><a href="#">Заполняете заявку</a> на сайте, или приходите в отделение</div>
+                            </li>
+                            <li>
+                                <div class="num scroll-animation">2</div>
+                                <div class="about-block scroll-animation">В течение 1 дня в компанию выезжает <br> специалист для получения документов <br> и дооформления заявки</div>
+                                <div class="fact-block scroll-animation">
+                                    <div>
+                                        <img src="img/credit/anketa.png" alt="">
+                                        <span>Приготовьте анкету предприятия (<a href="#">скачать</a>) <br> и копии паспортов учредителей-поручителей.</span>
+                                    </div>                                
+                                </div>
+                            </li>
+                            <li>
+                                <div class="num scroll-animation">3</div>
+                                <div class="about-block scroll-animation">В течение 1 дня мы принимаем <br> решение о выдаче займа</div>
+                            </li>
+                            <li>
+                                <div class="num scroll-animation">4</div>
+                                <div class="about-block scroll-animation">Подписываем документы <br>и через 2 часа перечисляем<br> деньги на расчётный счёт</div>
+                                <div class="fact-block scroll-animation">
+                                    <div>
+                                        <img src="img/credit/time.png" alt="">
+                                        <span>Срок погашения начинается в момент перевода денег на расчётный счёт компании. <br> В течение этого срока нужно погасить всю сумму.</span>
+                                    </div>                                
+                                </div>
+                            </li>
+                            <li>
+                                <div class="num scroll-animation">5</div>
+                                <div class="about-block scroll-animation">Вовремя погашаете займ</div>
+                                <div class="fact-block scroll-animation">
+                                    <div>
+                                        <img src="img/credit/check.png" alt="">
+                                        <span>Если вы полностью вовремя погасите займ, в следующий раз мы одобрим заявку в течение часа.</span>
+                                    </div>
+                                    <div>
+                                        <img src="img/credit/cross.png" alt="">
+                                        <span>Иначе — применим санкции.</span>
+                                    </div>                             
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Оформить заявку -->
+                <div class="send-button-wrapper">
+                    <div class="textblock scroll-animation scroll-animation">
+                        <div class="subheader">Запрос на предварительное одобрение</div>
+                        Предварительный запрос экономт ваше время. Отправьте запрос и мы сообщим вам с какой вероятностью вы можете получить займ. Это не гарантирует его выдачу.
+                    </div>
+                    <a href="#" class="submit-btn scroll-animation">Оформить заявку</a>
+                </div>
+
+            </div>
+            
+
+        </div>
+        
+
+        <!-- Подвальчик -->
+        <div class="footer">
+            <footer class="clear">
+                
+                <!-- Колонка -->
+                <div class="footer-column">
+                    <div class="footer-header">Бизнесу</div>
+
+                    <ul>
+                        <li><a href="#">Постоянный займ</a></li>
+                        <li><a href="#">Кэшаут</a></li>
+                        <li><a href="#">Микрофинансирование сотрудников</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка -->
+                <div class="footer-column">
+                    <div class="footer-header">Частным клиентам</div>
+
+                    <ul>
+                        <li><a href="#">Микрозаймы по паспорту</a></li>
+                        <li><a href="#">Целевые займы</a></li>
+                        <li><a href="#">Залоговые займы</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка -->
+                <div class="footer-column">
+                    <div class="footer-header">ПИК Приволжье</div>
+
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Офисы продаж</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка -->
+                <div class="footer-column">
+                    <div class="footer-header">Социальные сети</div>
+
+                    <ul class="social-network">
+                        <li class="fb"><a href="#">Фейсбук</a></li>
+                        <li class="vk"><a href="#">Вконтакте</a></li>
+                        <li class="twi"><a href="#">Твиттер</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-last-column">
+                    © 2016 ПИК Приволжье. Все права защищены
+                    <br>
+                    <br>
+                    Разработка - <a href="#">Websharks</a>,
+                    <br>
+                    дизайн - <a href="#">Xdesign</a>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+        <script src="js/calc.js"></script>
+        <script>
+
+        $(function(){
+            setSizes();
+            $(window).resize(function(){
+                setSizes();
+            });
+
+            //Анимация
+            startTimeout = 100;
+            setTimeout(function(){$(".credit-first-block .right-block, .credit-first-block .page-header, .credit-first-block .page-subheader, .header-wrapper").addClass("loading");},startTimeout);
+            setTimeout(function(){$(".credit-first-block .credit-info, .calc-slider-wrapper").addClass("loading");},startTimeout*3);
+            setTimeout(function(){$(".calc-slider-wrapper, .right-block label, .calculator .result, .credit-first-block .submit-btn, .credit-first-block .credit-more-info,  .credit-first-block .left-block .button, .credit-first-block .subtext, .credit-first-block .bigtext").addClass("loading");},startTimeout*3.5);
+
+            $(window).scroll(function(){
+
+                var top = $(window).scrollTop();
+                var checkPos = $(window).height()/1.2;
+
+                $(".scroll-animation").each(function(){
+
+                    if (top > ($(this).offset().top - checkPos)){
+                        $(this).addClass("loading");
+                    }
+                });
+            });
+        })
+
+        function setSizes(){
+            var windowHeight = $(window).height();
+            $(".credit-first-block-wrapper").attr("style","");
+            $(".credit-first-block-wrapper").css({
+                "height":windowHeight,
+            });
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

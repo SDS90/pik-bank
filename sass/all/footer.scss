@@ -1,0 +1,93 @@
+//Подвальчик
+
+.footer{
+	padding: 58px 0px 58px 0px;
+	footer{
+		max-width: 1750px;
+		padding: 0px 50px;
+		margin: 0px auto;
+
+		.footer-column,
+		.footer-last-column{
+			display: inline-block;
+			vertical-align: top;
+			font-size: 16px;
+			line-height: 24px;
+			color: #fff;
+		}
+
+		.footer-column{
+			float: left;
+			width: 17%;
+			padding-right: 20px;
+
+			li{
+				margin-bottom: 11px;
+			}
+		}
+
+		.footer-last-column{
+			float: right;
+			width: 20%;
+		}
+
+		.footer-header{
+			font-size: 14px;
+			font-weight: bold;
+			margin-bottom: 25px;
+		}
+
+		a{
+			color: #fff;
+			text-decoration: none;
+			border-bottom: 1px solid #fff;
+			border-bottom: 1px solid rgba(255,255,255,0.5);
+
+			&:hover{
+				border-color: transparent !important;
+			}
+		}
+
+		.social-network{
+			padding-left: 36px;
+
+			li{
+				a{
+					position: relative;
+
+					&:before{
+						content:"";
+						position: absolute;
+						left: -36px;
+						top: 2px;
+						width: 24px;
+						height: 17px;
+						background-image: url(../img/icons/social.png);
+						background-repeat: no-repeat;
+					}
+				}
+
+				&.fb a:before{
+					background-position: 0px 0px;
+				}
+
+				&.vk a:before{
+					background-position: 0px -37px;
+				}
+
+				&.twi a:before{
+					background-position: 0px -70px;
+				}
+			}
+		}
+	}
+}
+
+.main-page .footer{
+	position: fixed;
+	bottom: -100%;
+	left: 0px; right: 0px;
+	z-index: 5;
+
+	background-color: #68bc53;
+}

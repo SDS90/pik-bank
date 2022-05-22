@@ -1,0 +1,85 @@
+//Внутренние страницы - общее
+
+.inner-page{
+	width: 100%;
+	height: 100%;
+	background-color: #0b9007;
+	background-image: -webkit-linear-gradient(top, #12b20c 0%, #0b9007 100%);
+    background-image: -o-linear-gradient(top, #12b20c 0%, #0b9007 100%);
+    background-image: -moz-linear-gradient(top, #12b20c 0%, #0b9007 100%);
+    background-image: -ms-linear-gradient(top, #12b20c 0%, #0b9007 100%);
+    background-image: linear-gradient(top, #12b20c 0%, #0b9007 100%);
+
+    &.about{
+        background-image: url(../img/about-bg.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &.white{
+    	background-color: #FFF;
+    	background-image: none;
+
+    	.header,
+    	.header a{
+    		color: #222;
+    	}
+
+    	.header{
+    		a{
+				border-bottom: 1px solid #222;
+				border-bottom: 1px solid rgba(34,34,34,0.5);
+	    	}
+
+    		.menu-wrapper {
+
+    			.cabinet a:before{
+    				background-image: url(../img/icons/lk-dark.png);
+    			}
+
+    			.phone a, .phone span{
+    				color: #222;
+    				border-color: #222;
+    				border-color: rgba(34,34,34,0.5);
+    			}
+
+                .logo{
+                    background-image: url(../img/logo-dark.png);
+                }
+    		}
+    	}
+
+    	footer{
+    		.footer-column,
+			.footer-last-column{
+				color: #222;
+			}
+
+			a{
+				color: #222;
+				border-color: #222;
+				border-color: rgba(34,34,34,0.5);
+			}
+
+			.social-network li a:before{
+				background-image: url(../img/icons/social-green.png)
+			}
+    	}
+    }
+
+    &.left-green-gradient{
+        background-color: #159642;
+        background-image: -webkit-linear-gradient(left, #3ccd7b 0%, #0c8935 100%);
+        background-image: -o-linear-gradient(left, #3ccd7b 0%, #0c8935 100%);
+        background-image: -moz-linear-gradient(left, #3ccd7b 0%, #0c8935 100%);
+        background-image: -ms-linear-gradient(left, #3ccd7b 0%, #0c8935 100%);
+        background-image: linear-gradient(left, #3ccd7b 0%, #0c8935 100%); 
+    }
+
+    .page-header{
+		font-family: 'ProbaPro', 'Open Sans', sans-serif;
+		font-size: 56px;
+		text-align: center;
+	}
+}

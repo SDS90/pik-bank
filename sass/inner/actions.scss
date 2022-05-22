@@ -1,0 +1,145 @@
+//Акции
+
+.actions-page{
+	width: 100%;
+	color: #000;
+	padding-bottom: 100px;
+
+	a{
+		color: #000;
+	}
+
+	.page-header{
+		text-align: left;
+		line-height: 66px;
+		margin: 0px 0px 22px 0px;
+	}
+
+	.action-wrapper{
+		width: 100%;
+		max-width: 1750px;
+		margin: 0px auto;
+		padding: 50px 50px 0px 50px;
+	}
+
+	.action-header-wrapper{
+		width: 100%;
+		//height: 478px;
+		margin-top: 38px;
+		border-radius: 10px;
+		margin-bottom: 50px;
+
+		.picture,
+		.text{
+			display: inline-block;
+			vertical-align: top;
+			float: left;
+			height: 100%;
+		}
+
+		.text{
+			width: 38%;
+			background-color: #12a74a;
+			border-radius: 10px 0px 0px 10px;
+			padding: 3.5% 9% 3.55% 3%;
+			color: #fff;
+
+			.textblock{
+				color: #fff;
+				font-size: 18px;
+				line-height: 26px;
+				font-weight: 300;
+			}
+		}
+
+		.picture{
+			width: 62%;
+			border-radius: 0px 10px 10px 0px;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		&.no-picture{
+			height: auto;
+			.text{
+				width: 100%;
+				height: auto;
+				border-radius: 10px;
+				padding: 4.2% 9% 4.2% 3%;
+
+				.textblock{
+					width: 550px;
+				}
+			}
+		}
+
+		&.news-header{
+			.text{
+				width: 60%;
+				//padding: 3.55% 7% 3.55% 3%;
+			}
+			.picture{
+				width: 40%;
+			}
+		}
+	}
+	
+	.columns{
+		width: 100%;
+		padding: 0px 10px;
+
+		.col{
+			display: inline-block;
+			vertical-align: top;
+			float: left;
+			width: 25%;
+
+			padding-left: 4.5%;
+
+			&:first-child{
+				padding-left: 0px;
+			}
+		}
+
+		.col-header{
+			font-size: 24px;
+			line-height: 36px;
+			color: #000;
+			font-weight: 600;
+			margin-bottom: 15px;
+
+			a{
+				border-bottom: 2px solid #000;
+
+				&:hover{
+					border-color: transparent;
+				}
+			}
+		}
+
+		.textblock{
+			color: #000;
+			font-size: 18px;
+			line-height: 26px;
+			font-weight: 300;
+
+			a{
+				color: #12a74a;
+				border-color: 1px solid #12a74a;
+			}
+
+			li{
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.news-textblock{
+		width: 65%;
+		padding-left: 10px;
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+}

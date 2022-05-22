@@ -1,0 +1,226 @@
+//Личный кабинет
+
+.lc-page{
+	width: 100%;
+	color: #222;
+	padding-bottom: 100px;
+
+	a{
+		color: #222;
+
+		&:hover{
+			border-color: transparent !important;
+		}
+	}
+
+	.page-header{
+		margin: 90px 0px 17px 0px;
+	}
+
+	.change-password{
+		position: relative;
+		text-align: center;
+		margin-bottom: 60px;
+
+		a{
+			border-bottom: 1px dashed #222;
+		}
+
+		.change-password-form{
+			display: none;
+			position: absolute;
+			left: 50%;
+			top: 40px;
+			margin-left: -160px;
+			width: 310px;
+			background-color: #FFF;
+			border-radius: 10px;
+			padding: 30px;
+			box-shadow: 5px 5px 15px #b6b6b6;
+			font-weight: 300;
+			text-align: left;
+		}
+
+		.form-header{
+			font-size: 24px;
+			margin-bottom: 30px;
+		}
+
+		.submit-btn{
+			width: 100%;
+			text-align: center;
+			padding: 0px;
+		}
+
+		.error-text{
+			margin-top: 23px;
+			color: #999;
+		}
+	}
+
+	.loans-wrapper{
+		width: 100%;
+		max-width: 1590px;
+		margin: 0px auto;
+		padding: 0px 30px;
+
+		.loans-row{
+			margin: 0px -30px 60px -30px;
+		}
+	}
+
+	.loan-block{
+		width: 100%;
+		padding: 63px 47px 48px 53px;
+		background-color: #FFF;
+		box-shadow: 5px 5px 15px #b6b6b6;
+		border-radius: 10px;
+		font-size: 14px;
+		font-weight: 300;
+	}
+
+	.loan-info,
+	.loan-percents{
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+
+		.info{
+			display: inline-block;
+			font-size: 14px;
+			font-weight: 300;
+			margin-bottom: 8px;
+		}
+
+		.sum{
+			font-family: 'ProbaPro', 'Open Sans', sans-serif;
+			font-size: 48px;
+			font-weight: bold;
+		}
+	}
+
+	.loan-percents{
+		position: relative;
+		margin-left: 43px;
+
+		&:before{
+			content:"+";
+			position: absolute;
+			top: 6px;
+			left: -35px;
+			font-family: 'ProbaPro', 'Open Sans', sans-serif;
+			font-size: 60px;
+			font-weight: bold;
+		}
+	}
+
+	.loan-full-sum{
+		color: #666;
+		margin-top: 6px;
+	}
+
+	.dates{
+		margin-top: 55px;
+		>div{
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.start-date{
+			float: left;
+		}
+
+		.end-date{
+			float: right;
+		}
+	}
+
+	.loan-progressbar{
+		width: 100%;
+		height: 2px;
+		background-color: #e1e1e1;
+		margin: 14px 0px 34px 0px;
+
+		.progress{
+			width: 0px;
+			height: 100%;
+			background-color: #42b224;
+		}
+	}
+
+	.loan-about{
+		text-align: center;
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	.about-loan{
+		margin-top: 35px;
+		border-top: 1px solid #e1e1e1;
+		padding: 14px 45% 0px 0px;
+
+		font-size: 14px;
+		line-height: 18px;
+
+		p{
+			margin-bottom: 7px;
+		}
+	}
+
+	.loan-block-wrapper{
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+		width: 50%;
+		padding: 0px 30px;
+
+		&.alarm{
+			.sum,
+			.loan-about,
+			.loan-percents:before{
+				color: #d07001;
+			}
+
+			.loan-progressbar .progress{
+				background-color: #d07001;
+			}
+		}
+
+		&.finished{
+			.sum{
+				color: #666;
+			}
+
+			.loan-history{
+				display: inline-block;
+				vertical-align: top;
+				float: right;
+
+				div{
+					white-space: nowrap;
+					margin-bottom: 9px;
+				}
+
+				.loan-history-header{
+					font-weight: 600;
+					margin-bottom: 14px;
+				}
+			}
+
+			.loan-full-sum{
+				margin-top: 22px;
+			}
+
+			.about-loan{
+				background-image: url(../img/icons/check.png);
+				background-repeat: no-repeat;
+				background-position: 100% 15px;
+			}
+
+			&.delay .about-loan{
+				background-image: url(../img/icons/cross.png);
+			}
+		}
+	}
+
+}

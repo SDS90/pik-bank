@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=1348">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.2/themes/south-street/jquery-ui.css" />
+    
+    <!--[if lt IE 9]>
+        <script src="js/html5.js"></script>
+        <link rel="stylesheet" href="css/style_ie8.css">
+    <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+
+    <script src="js/plugins/skrollr.min.js"></script>
+
+    <script src="js/plugins/jquery.scrollbar.min.js"></script>
+    <script src="js/plugins/jquery.mousewheel.min.js"></script>
+    <script src="js/plugins/jquery.cycle.all.js"></script>
+    <script src="js/plugins/jquery.fancybox.js"></script>
+
+    <script src="js/plugins/jquery.inputmask.js"></script>
+
+    <script src="js/plugins/skrollr.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    
+    <title>ПИК - Главная</title>
+</head>
+
+<body>
+
+    <div class="main-page">
+    
+        <!-- Первый экран -->
+        <div class="first-wrapper screen-wrapper" id="firstScreen">
+
+                <!-- Шапка -->
+                <div class="header-wrapper">
+                    <div class="header">
+
+                        <!-- Меню -->
+                        <div class="menu-wrapper">
+                            <!-- Логотип -->
+                            <div>
+                                <a href="#" class="logo">
+                                </a>
+                            </div>                        
+
+                            <div>
+                                <ul class="menu">
+                                    <li><a href="#">Бизнесу и ИП</a></li>
+                                    <li><a href="#">Частным клиентам</a></li>
+                                    <li><a href="#">Офисы продаж</a></li>
+                                    <li><a href="#">Акции</a></li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <div class="cabinet">
+                                    <a href="#" class="open-cabinet-form">Вход в личный кабинет</a>
+                                
+                                    <!-- Форма входа в кабинет -->
+                                    <form class="cabinet-form">
+                                        <div class="form-header">Вход в личный кабинет</div>
+
+                                        <label>Логин</label>
+                                        <input type="text" class="textfield">
+
+                                        <label>Пароль</label>
+                                        <input type="password" class="textfield">
+
+                                        <input type="submit" value="Войти" class="submit-btn">
+
+                                        <div class="error">Ошибка</div>
+
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="phone"><span>8 800 333 23 23</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Слайдер на стартовой -->
+                <div class="screen first-slider">
+
+                    <div class="slide-wrapper">
+
+                        <div class="mist-bg">
+                            <div class="mist-bg--mist-1"></div>
+                            <div class="mist-bg--mist-2"></div>
+                        </div>
+
+                        <div class="floating-logo"></div>
+
+                        <div class="slide">
+
+                            <div class="slide-inner">
+                                <div class="slide-header">Ставки ниже — мечты ближе!</div>
+                                <div class="slide-subheader">Микрофинансирование по привлекательным ставкам, <br> на любые нужды</div>
+
+                                <div class="buttons-wrapper clear">
+                                    <a href="#" class="open-form button">Оформить заявку</a>
+                                    <div class="prev-next-buttons">
+                                        <a href="#" class="prev"></a>
+                                        <a href="#" class="next"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+
+                    <div class="slide-wrapper">
+                        <div class="slide" style="background-image: url(img/first/main-second.jpg);">
+                            
+                            <div class="slide-inner">
+                                <div class="slide-header">Бизнес - в космос!</div>
+                                <div class="slide-subheader">Займ «Постоянный» для бизнеса. Небольшие процентные <br> ставки, предодобренная сумма, выдача займа в течение часа.</div>
+
+                                <div class="buttons-wrapper clear">
+                                    <a href="#" class="open-form button">Оформить заявку</a>
+                                    <div class="prev-next-buttons">
+                                        <a href="#" class="prev"></a>
+                                        <a href="#" class="next"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Листайте вниз -->
+                <div class="scroll-down">
+                    <img src="img/icons/scrolldown.png" alt="">
+                    <span>Листайте вниз</span>
+                </div>
+
+        </div>
+
+        <!-- Второй экран -->
+        <div class="background second-bg" id="secondScreenBG"></div>
+        <div class="second-wrapper screen-wrapper" id="secondScreen">
+
+                <!-- Шапка -->
+                <div class="header-wrapper">
+                    <div class="header">
+
+                        <!-- Меню -->
+                        <div class="menu-wrapper">
+                            <!-- Логотип -->
+                            <div>
+                                <a href="#" class="logo">
+                                </a>
+                            </div>                        
+
+                            <div>
+                                <ul class="menu">
+                                    <li><a href="#">Бизнесу и ИП</a></li>
+                                    <li><a href="#">Частным клиентам</a></li>
+                                    <li><a href="#">Офисы продаж</a></li>
+                                    <li><a href="#">Акции</a></li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <div class="cabinet">
+                                    <a href="#" class="open-cabinet-form">Вход в личный кабинет</a>
+                                
+                                    <!-- Форма входа в кабинет -->
+                                    <form class="cabinet-form">
+                                        <div class="form-header">Вход в личный кабинет</div>
+
+                                        <label>Логин</label>
+                                        <input type="text" class="textfield">
+
+                                        <label>Пароль</label>
+                                        <input type="password" class="textfield">
+
+                                        <input type="submit" value="Войти" class="submit-btn">
+
+                                        <div class="error">Ошибка</div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="phone"><span>8 800 333 23 23</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Второй экран -->
+                <div class="second-screen-wrapper">
+                    <div class="second-screen-table">
+                        
+                        <div class="second-table-cell">
+                            <div class="slide-header">Микрофинансирование для бизнеса</div>
+
+                            <div class="about-us">
+                                <div class="icon-wrapper"><i class="icon time"></i></div>
+                                <div class="about-text">Персональные консультации, <br> круглосуточно</div>
+                            </div>
+
+                            <div class="about-us">
+                                <div class="icon-wrapper"><i class="icon personal"></i></div>
+                                <div class="about-text">Ваше персональное отделение</div>
+                            </div>
+
+                            <div class="about-us">
+                                <div class="icon-wrapper"><i class="icon money"></i></div>
+                                <div class="about-text">Запасной кошелёк</div>
+                            </div>
+                        </div>
+
+                        <div class="second-table-cell">
+                            <div class="cards-wrapper clear">
+
+                                <!-- Капиа -->
+                                <div class="card-block">
+                                    <a href="#" class="card" style="background-image: url(img/second/permanent.jpg);">
+                                        <div class="card-inner">
+                                            <span>Постоянный займ</span>
+                                        </div>                                    
+                                    </a>
+                                </div>
+                                
+                                <!-- Капиа -->
+                                <div class="card-block">
+                                    <a href="#" class="card" style="background-image: url(img/second/cash.jpg);">
+                                        <div class="card-inner">
+                                            <span>Кэшаут</span>
+                                        </div>                                    
+                                    </a>
+                                </div>
+
+                                <!-- Капиа -->
+                                <div class="card-block">
+                                    <a href="#" class="card" style="background-image: url(img/second/workers.jpg);">
+                                        <div class="card-inner">
+                                            <span>Микро-займы <br> для сотрудников</span>
+                                        </div>   
+                                    </a>
+                                </div>
+
+                                <!-- Капиа -->
+                                <div class="card-block">
+                                    <a href="#" class="card all-link">
+                                        <div class="card-inner">
+                                            <span>Все предложения <br> для бизнеса</span>
+                                        </div>                                      
+                                    </a>
+                                </div>                          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+        <!-- Третий экран -->
+        <div class="background third-bg" id="thirdScreenBG"></div>
+        <div class="third-wrapper screen-wrapper" id="thirdScreen">
+
+                <!-- Шапка -->
+                <div class="header-wrapper">
+                    <div class="header">
+
+                        <!-- Меню -->
+                        <div class="menu-wrapper">
+                            <!-- Логотип -->
+                            <div>
+                                <a href="#" class="logo">
+                                </a>
+                            </div>                        
+
+                            <div>
+                                <ul class="menu">
+                                    <li><a href="#">Бизнесу и ИП</a></li>
+                                    <li><a href="#">Частным клиентам</a></li>
+                                    <li><a href="#">Офисы продаж</a></li>
+                                    <li><a href="#">Акции</a></li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <div class="cabinet">
+                                    <a href="#" class="open-cabinet-form">Вход в личный кабинет</a>
+                                
+                                    <!-- Форма входа в кабинет -->
+                                    <form class="cabinet-form">
+                                        <div class="form-header">Вход в личный кабинет</div>
+
+                                        <label>Логин</label>
+                                        <input type="text" class="textfield">
+
+                                        <label>Пароль</label>
+                                        <input type="password" class="textfield">
+
+                                        <input type="submit" value="Войти" class="submit-btn">
+
+                                        <div class="error">Ошибка</div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="phone"><span>8 800 333 23 23</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Третий экран -->
+                <div class="third-screen-wrapper">
+                    
+                    <!-- Слайдер -->
+                    <div class="third-slider">
+                        <!-- Первый слайд -->
+                        <div class="slide" style="background-image:url(img/third/wedding.jpg);"></div>
+                        <!-- Второй слайд -->
+                        <div class="slide" style="background-image:url(img/third/furniture.jpg);"></div>
+                    </div>
+                    
+                    <!-- Левая колонка -->
+                    <div class="third-screen-inner clear">
+                        <div class="third-screen-inner-block">
+
+                            <div class="third-screen-table">
+                                <div class="third-table-cell">
+                                    
+                                    <!-- Всякик условия -->
+                                    <div class="about-order">
+                                        <!-- Условия к первому слайду -->
+                                        <div class="about-order-table">
+                                            <div>
+                                                <div class="about-header">до 500<br> т.р.</div>
+                                                <a href="#">Условия</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Условия к второму слайду -->
+                                        <div class="about-order-table">
+                                            <div>
+                                                <div class="about-header">Техника,<br> мебель,<br> отдых</div>
+                                                <a href="#">Условия</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Стрелки -->
+                                    <span class="prev" id="thirdSliderPrev"></span>
+                                    <span class="next" id="thirdSliderNext"></span>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!-- Правая колонка -->
+                        <div class="third-screen-inner-block">
+
+                            <div class="third-screen-table">
+                        
+                                <div class="third-table-cell about-orders">
+                                    <div class="slide-header">Лучшие предложения для частных клиентов</div>
+
+                                    <div class="about-us">
+                                        <div class="icon-wrapper"><i class="icon time"></i></div>
+                                        <div class="about-text">Решение в течение <br> 10 минут</div>
+                                    </div>
+
+                                    <div class="about-us">
+                                        <div class="icon-wrapper"><i class="icon personal"></i></div>
+                                        <div class="about-text">Ваше персональное <br> отделение</div>
+                                    </div>
+
+                                    <div class="about-us">
+                                        <div class="icon-wrapper"><i class="icon money"></i></div>
+                                        <div class="about-text">Низкие проценты</div>
+                                    </div>
+
+                                    <a href="#" class="button">Все предложения</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+        </div>
+
+        <!-- Четвёртый экран -->
+        <div class="forth-wrapper screen-wrapper" id="forthScreen">
+
+                <!-- Шапка -->
+                <div class="header-wrapper">
+                    <div class="header">
+
+                        <!-- Меню -->
+                        <div class="menu-wrapper">
+                            <!-- Логотип -->
+                            <div>
+                                <a href="#" class="logo">
+                                    <img src="img/logo-dark.png" alt="">
+                                </a>
+                            </div>                        
+
+                            <div>
+                                <ul class="menu">
+                                    <li><a href="#">Бизнесу и ИП</a></li>
+                                    <li><a href="#">Частным клиентам</a></li>
+                                    <li><a href="#">Офисы продаж</a></li>
+                                    <li><a href="#">Акции</a></li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <div class="cabinet">
+                                    <a href="#" class="open-cabinet-form">Вход в личный кабинет</a>
+                                
+                                    <!-- Форма входа в кабинет -->
+                                    <form class="cabinet-form">
+                                        <div class="form-header">Вход в личный кабинет</div>
+
+                                        <label>Логин</label>
+                                        <input type="text" class="textfield">
+
+                                        <label>Пароль</label>
+                                        <input type="password" class="textfield">
+
+                                        <input type="submit" value="Войти" class="submit-btn">
+
+                                        <div class="error">Ошибка</div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="phone"><span>8 800 333 23 23</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Четвёртый экран -->
+                <div class="forth-screen-wrapper">
+                    <div class="slide-header">Новости из мира финансов</div>
+
+                    <div class="forth-screen-inner clear">
+
+                        <!-- Левая колонка -->
+                        <div class="column left">
+
+                            <!-- Блок новости -->
+                            <div class="news-block">
+                                <div class="date">30.07.2016</div>
+                                <div class="news-header">В личном кабинете займы открываются с пониженной ставкой</div>
+                                <div class="textblock">Если вы зарегистрируетесь в личном кабинете, то некоторые займы можно будет получить по существенно более низким процентным ставкам. <a href="#">Как это сделать?</a> </div>
+                            </div>
+
+                            <!-- Блок новости -->
+                            <div class="news-block">
+                                <div class="date">30.07.2016</div>
+                                <div class="news-header">Вчера заёмщик - сегодня кредитор</div>
+                                <div class="textblock">Делитесь своим займом с друзьями. Зарабатывайте на проценах как опытные финансисты. <a href="#">Поделиться</a> </div>
+                            </div>
+                        </div>
+
+                        <!-- Главная новость -->
+                        <a href="#" class="main-news" style="background-image:url(img/forth/news-picture.jpg);">
+                            <div class="date">30.07.2016</div>
+                            <div class="news-header">Всемирная выставка финансовых технологий 2016, Манчестер </div>
+                            <div class="textblock">Как отметил в своем выступлении, начальник управления развития крупного и среднего бизнеса ОАО «Сбербанк»: «Нечего сопли жевать!». Мы согласны с этим утверждением. Невкусно и бесполезно, друзья!</div>
+                        </a>
+
+                        <!-- Правая колонка -->
+                        <div class="column right">
+                            <!-- Блок новости -->
+                            <div class="news-block">
+                                <div class="date">30.07.2016</div>
+                                <div class="news-header">Предодобренная сумма для индивидуальных предпринимателей выросла в три раза</div>
+                                <div class="textblock">В связи с уменьшением покупательской способности рубля, сумма в 50 000 р. перестала отвечать потреностям малого бизнеса. <a href="#">Взять в долг 150 000 </a> </div>
+                            </div>
+
+                            <!-- Блок новости -->
+                            <div class="news-block">
+                                <div class="date">30.07.2016</div>
+                                <div class="news-header">Ипотека только по паспорту, это реально?</div>
+                                <div class="textblock">Конечно не реально. Этот заголовок мы поставили для привлечения к проблеме невнимательности при заполнении кредитного договора. <a href="#">Узнать больше.</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+        </div>
+
+        <!-- Подвальчик -->
+        <div class="footer" id="footerScreen">
+            <footer class="clear">
+                
+                <!-- Колонка -->
+                <div class="footer-column">
+                    <div class="footer-header">Бизнесу</div>
+
+                    <ul>
+                        <li><a href="#">Постоянный займ</a></li>
+                        <li><a href="#">Кэшаут</a></li>
+                        <li><a href="#">Микрофинансирование сотрудников</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка -->
+                <div class="footer-column">
+                    <div class="footer-header">Частным клиентам</div>
+
+                    <ul>
+                        <li><a href="#">Микрозаймы по паспорту</a></li>
+                        <li><a href="#">Целевые займы</a></li>
+                        <li><a href="#">Залоговые займы</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка -->
+                <div class="footer-column">
+                    <div class="footer-header">ПИК Приволжье</div>
+
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Офисы продаж</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка -->
+                <div class="footer-column">
+                    <div class="footer-header">Социальные сети</div>
+
+                    <ul class="social-network">
+                        <li class="fb"><a href="#">Фейсбук</a></li>
+                        <li class="vk"><a href="#">Вконтакте</a></li>
+                        <li class="twi"><a href="#">Твиттер</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-last-column">
+                    © 2018 ПИК Приволжье. Все права защищены
+                    <br>
+                    <br>
+                    Разработка - <a href="#">Websharks</a>,
+                    <br>
+                    дизайн - <a href="#">Xdesign</a>
+                </div>
+
+            </footer>
+        </div>
+
+
+
+    </div>
+
+
+    <script>
+
+        var windowHeight = 0;
+
+        $(function(){
+            setSizes();
+            $(window).resize(function(){
+                setSizes();
+            });
+        })
+
+        function setSizes(){
+
+            var prevWindowHeight = windowHeight;
+
+            windowHeight = $(window).height();
+
+            $(".main-page").attr("style","");
+            $(".main-page").css({
+                "height":windowHeight,
+            });
+
+            $(".main-page .background, .screen-wrapper, .main-page").css({
+                "width": $("body").width(),
+            });
+
+            $("#firstScreen, #secondScreenBG, #secondScreen, #thirdScreenBG, #thirdScreen, #thirdScreen").each(function(index, element) {
+                $.each(element.attributes, function() {
+                    if (this.name.indexOf('data-') === 0) {
+                        $(element).removeAttr(this.name);
+                    }
+                });
+            });
+
+            var stopView = 1000;
+
+            skrollr.init().destroy();
+
+            //Убираем старые атрибуты
+
+
+            $("#firstScreen").removeAttr('data-0');
+            $("#firstScreen").removeAttr('data-' + prevWindowHeight);
+
+            $("#secondScreenBG").removeAttr('data-0');
+            $("#secondScreenBG").removeAttr('data-' + prevWindowHeight);
+            $("#secondScreenBG").removeAttr('data-' + prevWindowHeight*2);
+
+            $("#secondScreen").removeAttr('data-0');
+            $("#secondScreen").removeAttr('data-' + prevWindowHeight);
+            $("#secondScreen").removeAttr('data-' + parseInt(prevWindowHeight + stopView));
+            $("#secondScreen").attr('data-' + parseInt(prevWindowHeight*2 + stopView));
+
+            $("#thirdScreenBG").removeAttr('data-0');
+            $("#thirdScreenBG").removeAttr('data-' + parseInt(prevWindowHeight*2 + stopView));
+            $("#thirdScreenBG").removeAttr('data-' + parseInt(prevWindowHeight*3 + stopView));
+
+            $("#thirdScreen").removeAttr('data-0');
+            $("#thirdScreen").removeAttr('data-' + parseInt(prevWindowHeight + stopView));
+            $("#thirdScreen").removeAttr('data-' + parseInt(prevWindowHeight*2 + stopView*2));
+            $("#thirdScreen").removeAttr('data-' + parseInt(prevWindowHeight*3 + stopView*2));
+
+            $("#forthScreen").removeAttr('data-0');
+            $("#forthScreen").removeAttr('data-' + parseInt(prevWindowHeight*2 + stopView*2));
+            $("#forthScreen").removeAttr('data-' + parseInt(prevWindowHeight*3 + stopView*2));
+            $("#forthScreen").removeAttr('data-' + parseInt(prevWindowHeight*3 + stopView*3));
+            $("#forthScreen").removeAttr('data-' + parseInt(prevWindowHeight*3.5 + stopView*3));
+
+            $("#footerScreen").removeAttr('data-0');
+            $("#footerScreen").removeAttr('data-' + parseInt(prevWindowHeight*3 + stopView*3));
+            $("#footerScreen").removeAttr('data-' + parseInt(prevWindowHeight*3.5 + stopView*3));
+
+            //Добавляем новые
+
+            $("#firstScreen").attr('data-0','top: 0px;');
+            $("#firstScreen").attr('data-' + windowHeight,'top: -' + windowHeight + 'px;');
+
+            $("#secondScreenBG").attr('data-0','top: 0px;');
+            $("#secondScreenBG").attr('data-' + windowHeight,'top: 0px;');
+            $("#secondScreenBG").attr('data-' + windowHeight*2,'top: -' + windowHeight + 'px;');
+
+            $("#secondScreen").attr('data-0','top: 0px; opacity: 0;');
+            $("#secondScreen").attr('data-' + windowHeight,'top: 0px; opacity: 1;');
+            $("#secondScreen").attr('data-' + parseInt(windowHeight + stopView),'top: 0px; opacity: 1;');
+            $("#secondScreen").attr('data-' + parseInt(windowHeight*2 + stopView),'top: -' + windowHeight + 'px; opacity: 1;');
+
+            $("#thirdScreenBG").attr('data-0','top: 0px;');
+            $("#thirdScreenBG").attr('data-' + parseInt(windowHeight*2 + stopView),'top: 0px;');
+            $("#thirdScreenBG").attr('data-' + parseInt(windowHeight*3 + stopView),'top: -' + windowHeight + 'px;');
+
+            $("#thirdScreen").attr('data-0','top: 0px; opacity: 0;');
+            $("#thirdScreen").attr('data-' + parseInt(windowHeight + stopView),'top: 0px; opacity: 0;');
+            $("#thirdScreen").attr('data-' + parseInt(windowHeight*2 + stopView*2),'top: 0px; opacity: 1;');
+            $("#thirdScreen").attr('data-' + parseInt(windowHeight*3 + stopView*2),'top: -' + windowHeight + 'px;');
+
+            $("#forthScreen").attr('data-0','top: 0px; opacity: 0;');
+            $("#forthScreen").attr('data-' + parseInt(windowHeight*2 + stopView*2),'top: 0px; opacity: 0;');
+            $("#forthScreen").attr('data-' + parseInt(windowHeight*3 + stopView*2),'top: 0px; opacity: 1;');
+            $("#forthScreen").attr('data-' + parseInt(windowHeight*3 + stopView*3),'top: 0px; opacity: 1;');
+            $("#forthScreen").attr('data-' + parseInt(windowHeight*3.5 + stopView*3),'opacity: 0.5;');
+
+            $("#footerScreen").attr('data-0','bottom: -' + windowHeight + 'px;');
+            $("#footerScreen").attr('data-' + parseInt(windowHeight*3 + stopView*3),'bottom: -' + windowHeight + 'px;');
+            $("#footerScreen").attr('data-' + parseInt(windowHeight*3.5 + stopView*3),'bottom: 0px;');
+
+            //Запуск скролла
+            skrollr.init({
+                edgeStrategy: 'set',
+                easing: {
+                    WTF: Math.random,
+                    inverted: function(p) {
+                        return 1-p;
+                    }
+                }
+            });
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=1348">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.2/themes/south-street/jquery-ui.css" />
+    
+    <!--[if lt IE 9]>
+        <script src="js/html5.js"></script>
+        <link rel="stylesheet" href="css/style_ie8.css">
+    <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+
+    <script src="js/plugins/skrollr.min.js"></script>
+
+    <script src="js/plugins/jquery.scrollbar.min.js"></script>
+    <script src="js/plugins/jquery.mousewheel.min.js"></script>
+    <script src="js/plugins/jquery.cycle.all.js"></script>
+    <script src="js/plugins/jquery.fancybox.js"></script>
+
+    <script src="js/plugins/jquery.inputmask.js"></script>
+
+    <script src="js/plugins/skrollr.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    
+    <title>ПИК - Микрофинансирование для бизнеса</title>
+</head>
+
+<body> 
+
+    <!-- Внутренняя страница (Зелёная) -->
+    <div class="inner-page">
+
+        <!-- В этом блоке всё, кроме подвала -->
+        <div id="withoutFooter">
+            <!-- Шапка -->
+            <div class="header-wrapper">
+                <div class="header">
+
+                    <!-- Меню -->
+                    <div class="menu-wrapper">
+                        <!-- Логотип -->
+                        <div>
+                            <a href="#" class="logo">
+                            </a>
+                        </div>                        
+
+                        <div>
+                            <ul class="menu">
+                                <li><a href="#">Бизнесу и ИП</a></li>
+                                <li><a href="#">Частным клиентам</a></li>
+                                <li><a href="#">Офисы продаж</a></li>
+                                <li><a href="#">Акции</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <div class="cabinet">
+                                <a href="#" class="open-cabinet-form">Вход в личный кабинет</a>
+                                
+                                <!-- Форма входа в кабинет -->
+                                <form class="cabinet-form">
+                                    <div class="form-header">Вход в личный кабинет</div>
+
+                                    <label>Логин</label>
+                                    <input type="text" class="textfield">
+
+                                    <label>Пароль</label>
+                                    <input type="password" class="textfield">
+
+                                    <input type="submit" value="Войти" class="submit-btn">
+
+                                    <div class="error">Ошибка</div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="phone"><span>8 800 333 23 23</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Страница Микрофинансов для бизнеса -->
+            <div class="business-page">
+                
+                <div class="page-header">Микрофинансирование <br> для бизнеса</div>
+
+                <!-- Блоки займов -->
+                <div class="loans-wrapper">
+
+                    <!-- Строка на два блока -->
+                    <div class="loans-row clear">
+                        
+                        <!-- Блок займа -->
+                        <div class="loan-block-wrapper">
+                            <a href="#" class="loan-block clear">
+
+                                <!-- Блок с картинкой -->
+                                <div class="pic-block" style="background-image:url(img/business/permanent.jpg);">
+                                    <div class="pic-inner"><span>Постоянный займ</span></div>
+                                </div>
+
+                                <div class="info-block">
+
+                                    <div class="textblock">
+                                        До <span>100 000 Р</span> <br>
+                                        на 1 месяц под 2% в день
+                                    </div>
+
+                                    <span class="button transparent" onclick="RedirectToPage('#'); return false;">Оформить заявку</span>
+                                </div>
+
+                            </a>
+                        </div>
+                        
+                        <!-- Блок займа  -->
+                        <div class="loan-block-wrapper">
+                            <a href="#" class="loan-block clear">
+
+                                <!-- Блок с картинкой -->
+                                <div class="pic-block" style="background-image:url(img/business/cash.jpg);">
+                                    <div class="pic-inner"><span>Кэшаут</span></div>
+                                </div>
+
+                                <div class="info-block">
+
+                                    <div class="textblock">
+                                        До <span>150 000 Р</span> <br>
+                                        в течение дня с бесплатной <br>
+                                        доставкой денег до банка
+                                    </div>
+
+                                    <span class="button transparent" onclick="RedirectToPage('#'); return false;">Условия займа</span>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Строка на два блока -->
+                    <div class="loans-row clear">
+                        
+                        <!-- Блок займа  -->
+                        <div class="loan-block-wrapper">
+                            <a href="#" class="loan-block clear">
+
+                                <!-- Блок с картинкой -->
+                                <div class="pic-block" style="background-image:url(img/business/micro.jpg);">
+                                    <div class="pic-inner"><span>Микрозаймы для сотрудников</span></div>
+                                </div>
+
+                                <div class="info-block">
+
+                                    <div class="textblock">
+                                        При поручительстве <br> юридического лица.
+                                        Только для бюджетных <br> организаций.
+                                    </div>
+
+                                    <span class="button transparent" onclick="RedirectToPage('#'); return false;">Условия займа</span>
+                                </div>
+
+                            </a>
+                        </div>
+
+                                                <!-- Блок займа -->
+                        <div class="loan-block-wrapper">
+                            <a href="#" class="loan-block clear">
+
+                                <!-- Блок с картинкой -->
+                                <div class="pic-block" style="background-image:url(img/business/start.jpg);">
+                                    <div class="pic-inner"><span>Открытие бизнеса</span></div>
+                                </div>
+
+                                <div class="info-block">
+
+                                    <div class="textblock">
+                                        От <span>300 000 Р</span> <br>
+                                        на 3 месяца под 10% в день
+                                    </div>
+
+                                    <span class="button transparent" onclick="RedirectToPage('#'); return false;">Оформить заявку</span>
+                                </div>
+
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Строка на два блока -->
+                    <div class="loans-row clear">
+
+                        <!-- Блок займа -->
+                        <div class="loan-block-wrapper">
+                            <a href="#" class="loan-block clear">
+
+                                <!-- Блок с картинкой -->
+                                <div class="pic-block" style="background-image:url(img/business/alarm.jpg);">
+                                    <div class="pic-inner"><span>Неотложный</span></div>
+                                </div>
+
+                                <div class="info-block">
+
+                                    <div class="textblock">
+                                        До <span>20 000 Р</span> <br>
+                                        на 2 недели под 15% в день
+                                    </div>
+
+                                    <span class="button transparent" onclick="RedirectToPage('#'); return false;">Оформить заявку</span>
+                                </div>
+
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>    
+
+            </div>
+
+        </div>
+        
+
+        <!-- Подвальчик -->
+        <div class="footer">
+            <footer class="clear">
+                
+                <!-- Колонка -->
+                <div class="footer-column">
+                    <div class="footer-header">Бизнесу</div>
+
+                    <ul>
+                        <li><a href="#">Постоянный займ</a></li>
+                        <li><a href="#">Кэшаут</a></li>
+                        <li><a href="#">Микрофинансирование сотрудников</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка -->
+                <div class="footer-column">
+                    <div class="footer-header">Частным клиентам</div>
+
+                    <ul>
+                        <li><a href="#">Микрозаймы по паспорту</a></li>
+                        <li><a href="#">Целевые займы</a></li>
+                        <li><a href="#">Залоговые займы</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка -->
+                <div class="footer-column">
+                    <div class="footer-header">ПИК Приволжье</div>
+
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Офисы продаж</a></li>
+                    </ul>
+                </div>
+
+                <!-- Колонка -->
+                <div class="footer-column">
+                    <div class="footer-header">Социальные сети</div>
+
+                    <ul class="social-network">
+                        <li class="fb"><a href="#">Фейсбук</a></li>
+                        <li class="vk"><a href="#">Вконтакте</a></li>
+                        <li class="twi"><a href="#">Твиттер</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-last-column">
+                    © 2016 ПИК Приволжье. Все права защищены
+                    <br>
+                    <br>
+                    Разработка - <a href="#">Websharks</a>,
+                    <br>
+                    дизайн - <a href="#">Xdesign</a>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+
+    <!-- Все скрипты с формой звявки -->
+    <script src="js/orderform.js"></script>
+
+</body>
+
+</html>
